@@ -12,16 +12,12 @@
  Running this script will drop the entire database if it exists. So be cautious if there is same database name as
  in the scripts and back up before running anything.
  
-*/
-
-
+ */
 USE master;
 
 GO
-
--- Drop and create the 'DataWarehouse' database
-
-IF EXISTS (
+    -- Drop and create the 'DataWarehouse' database
+    IF EXISTS (
         SELECT
             1
         FROM
@@ -37,16 +33,14 @@ DROP DATABASE DataWarehouse;
 END;
 
 GO
-
--- Create the 'DataWarehouse' database
+    -- Create the 'DataWarehouse' database
     CREATE DATABASE DataWarehouse;
 
 GO
     USE DataWarehouse;
 
 GO
-
--- Create Schemas
+    -- Create Schemas
     CREATE SCHEMA Bronze;
 
 GO

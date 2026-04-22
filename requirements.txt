@@ -1,0 +1,4 @@
+# Data Engineering Essentials
+pandas>=1.5.0
+sqlalchemy>=1.4.0
+pyodbc>=4.0.0
